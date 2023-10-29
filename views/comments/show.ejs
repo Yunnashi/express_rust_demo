@@ -9,5 +9,9 @@
     <h1>コメントID:<%= comment.id %></h1>
     <p><%= comment.comment %> - <%= comment.username %></p>
     <a href="/comments">一覧へ戻る</a>
+    <a href="/comments/<%= comment.id%>/edit">編集</a>
+    <form action="/comments/<%= comment.id%>?_method=DELETE" method="POST">
+      <button>削除</button>
+    </form>
   </body>
 </html>

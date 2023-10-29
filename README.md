@@ -1,7 +1,7 @@
-
 # Express RUST DEMO my sample
 
-## 今回のRUSTの内容
+## 今回の RUST の内容
+
 GET /comments - コメント一覧を取得
 
 POST /comments - 新しいコメントを作成
@@ -13,50 +13,71 @@ PATCH /comments/:id - 特定のコメントを更新
 DELETE /comments/:id - 特定のコメントを削除
 
 ## 実行方法
+
+クローン後
+
+```
+npm i
+```
+
+node の実行
+
 ```
 nodemon index.js
 ```
 
 ## 構築手順メモ
 
-### 事前準備（今回はDEMOのためPCにNodeをインストールして実施）
-・Node.jsのインストール
+### 事前準備（今回は DEMO のため PC に Node をインストールして実施）
+
+・Node.js のインストール
 https://nodejs.org/en/download
 
-・nodemonのインストール
+・nodemon のインストール
 https://www.npmjs.com/package/nodemon
 
-・フロント側の構築にejsというパッケージを利用
+・PATCH と DELETE は html の Form が標準でサポートしていないため、method-override というパッケージを利用
+https://www.npmjs.com/package/method-override
+
+・フロント側の構築に ejs というパッケージを利用
 https://ejs.co/
+
 ```
 $ npm install ejs
 ```
 
-viewsディレクトリの作成
+views ディレクトリの作成
+
 ```
 mkdir views
 ```
-この中にejsファイルを作成する必要がある
 
+この中に ejs ファイルを作成する必要がある
 
-### Expressの構築
-空のpackage.jsonを作成
+### Express の構築
+
+空の package.json を作成
+
 ```
 npm init
 ```
-→全部Enter
 
-Expressをインストール
+→ 全部 Enter
+
+Express をインストール
+
 ```
 npm i express
 ```
 
-index.jsを作成
+index.js を作成
+
 ```
 touch index.js
 ```
 
-index.js内に以下を記入
+index.js 内に以下を記入
+
 ```
 const express = require("express");
 const PORT = 3000;
@@ -67,16 +88,4 @@ app.listen(PORT, () => {
 });
 ```
 
-Expressの初期設定完了
-
-
-
-
-
-
-
-
-
-
-
-
+Express の初期設定完了
