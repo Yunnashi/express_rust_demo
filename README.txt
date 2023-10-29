@@ -1,7 +1,7 @@
 
-#Express RUST DEMO my sample
+# Express RUST DEMO my sample
 
-##今回のRUSTの内容
+## 今回のRUSTの内容
 GET /comments - コメント一覧を取得
 
 POST /comments - 新しいコメントを作成
@@ -12,14 +12,14 @@ PATCH /comments/:id - 特定のコメントを更新
 
 DELETE /comments/:id - 特定のコメントを削除
 
-##実行方法
+## 実行方法
 ```
 nodemon index.js
 ```
 
-##構築手順メモ
+## 構築手順メモ
 
-###事前準備（今回はDEMOのためPCにNodeをインストールして実施）
+### 事前準備（今回はDEMOのためPCにNodeをインストールして実施）
 ・Node.jsのインストール
 https://nodejs.org/en/download
 ・nodemonのインストール
@@ -37,7 +37,7 @@ mkdir views
 この中にejsファイルを作成する必要がある
 
 
-###Expressの構築
+### Expressの構築
 空のpackage.jsonを作成
 ```
 npm init
