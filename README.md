@@ -22,8 +22,10 @@ nodemon index.js
 ### 事前準備（今回はDEMOのためPCにNodeをインストールして実施）
 ・Node.jsのインストール
 https://nodejs.org/en/download
+
 ・nodemonのインストール
 https://www.npmjs.com/package/nodemon
+
 ・フロント側の構築にejsというパッケージを利用
 https://ejs.co/
 ```
