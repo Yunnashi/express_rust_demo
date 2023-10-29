@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comments</title>
+  </head>
+  <body>
+    <h1>Comments</h1>
+    <a href="comments/new">新規コメントを作成</a>
+    <ul>
+      <% for( let c of comments){ %>
+      <li>
+        <%= c.comment %> - <b><%= c.username %></b>
+        <a href="/comments/<%= c.id %>">詳細</a>
+      </li>
+
+      <% } %>
+    </ul>
+  </body>
+</html>
